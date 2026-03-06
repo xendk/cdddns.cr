@@ -1,0 +1,25 @@
+127.0.0.1	localhost
+127.0.1.1	xiphos
+
+# 192.168.128.9    webtestbupl.dk
+
+# 172.21.0.7    bupl.dk
+# 172.21.0.9     proxy.bupl.dk
+
+# 192.168.192.7    upgrade-fbs.ddbcms.dk
+
+172.19.0.8     dpl2.docker
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+172.18.0.8 www.dpl2.local
+
+172.26.0.10 dev.webtestbupl.dk
+# 240.0.0.1 loginws.webtestbupl.dk
+172.19.0.2 fbi.dpl-cms.local
+172.19.0.2 fbs.dpl-cms.local
+172.19.0.2 adgangsplatformen.dpl-cms.local
+172.19.0.2 responder.wt-safetag.com
+172.19.0.8 dpl-cms.docker

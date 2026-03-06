@@ -1,0 +1,17 @@
+name: cdddns
+version: 0.1.0
+
+authors:
+  - Thomas Fini Hansen <xen@xen.dk>
+
+targets:
+  cdddns:
+    main: src/cdddns.cr
+
+crystal: '>= 1.19.1'
+
+dependencies:
+  docr:
+    github: marghidanu/docr
+
+license: MIT
