@@ -1,14 +1,35 @@
-# cdddns
+# CDDDNS
 
-TODO: Write a description here
+Crystal Docker Development Domain Name Service. A riff on
+[LDDDNS](/arnested/ldddns).
+
+Add domain names to Docker containers so they're easier to access from
+a browser (among other things).
+
+The difference from LDDDNS is that CDDDNS just hacks `/etc/hosts`,
+rather than using multicast DNS.
 
 ## Installation
 
-TODO: Write installation instructions here
+```shell
+shards build
+```
+
+Run `./bin/cdddns` by hand.
 
 ## Usage
 
-TODO: Write usage instructions here
+```shell
+sudo ./bin/cdddns
+```
+
+Listens to Docker events and adds container IPs to `/etc/hosts`. You
+can test it on another file with the `-f` switch (in which case `sudo`
+isn't needed).
+
+## Limitations
+
+Currently only handles containers started while it's running.
 
 ## Development
 
