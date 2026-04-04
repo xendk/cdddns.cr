@@ -65,7 +65,7 @@ module Cdddns
       end
     end
 
-    private def convert_to_model(info : Docr::ContainerInfo) : Container
+    private def convert_to_model(info : Docr::Types::ContainerInspectResponse) : Container
       ips = [] of String
       
       if ip = info.network_settings.ip_address
