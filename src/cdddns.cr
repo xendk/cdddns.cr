@@ -9,13 +9,16 @@ require "./cdddns/daemon"
 
 # A simple Docker "DNS service".
 module Cdddns
-  VERSION = "0.1.0"
+  VERSION = {{ `shards version "#{__DIR__}"`.chomp.stringify }}
 
   def self.main
     hostsfile = "/etc/hosts"
 
     OptionParser.parse do |parser|
-      parser.banner = "Usage: #{PROGRAM_NAME} [arguments]"
+      parser.banner = <<-USAGE
+      Usage: #{PROGRAM_NAME} [switches]
+      Version #{VERSION}
+      USAGE
       parser.on("-f FILE", "--file=FILE", "Hosts file to edit (defaults to /etc/hosts)") { |file| hostsfile = file }
       parser.on("-h", "--help", "Show this help") do
         puts parser
