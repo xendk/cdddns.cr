@@ -1,10 +1,11 @@
+# NOTICE: This lockfile contains some overrides from shard.override.yml
 version: 2.0
 shards:
   crystar:
     git: https://github.com/naqvis/crystar.git
     version: 0.4.0
 
-  docr:
-    git: https://github.com/marghidanu/docr.git
-    version: 0.1.4
+  docr: # Overridden
+    git: https://github.com/xendk/docr.git
+    version: 0.1.4+git.commit.225fe7543e4afa71236528509166d88f5de3c090
 
