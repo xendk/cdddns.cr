@@ -27,10 +27,6 @@ Listens to Docker events and adds container IPs to `/etc/hosts`. You
 can test it on another file with the `-f` switch (in which case `sudo`
 isn't needed).
 
-## Limitations
-
-Currently only handles containers started while it's running.
-
 ## Development
 
 TODO: Write development instructions here
